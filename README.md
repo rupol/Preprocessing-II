@@ -13,9 +13,9 @@ Fun Bus is a travel agency looking for some help on their website. They want a n
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo). **Please don't merge your own pull request**
-- [ ] Add your project manager as a reviewer on the pull-request
-- [ ] Your project manager will count the project as complete by merging the branch back into master.
+- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo). **Please don't merge your own pull request**
+- [x] Add your project manager as a reviewer on the pull-request
+- [x] Your project manager will count the project as complete by merging the branch back into master.
 
 ## Task 2: Set up your preprocessor
 
@@ -27,7 +27,7 @@ Follow these steps for completing your project.
 
 ## Task 3: Import LESS Files
 
-- [ ] Navigate to your `index.less` file. Notice the file is blank. In order for you to see the styles for this project you must import them in a certain order. That order is as follows:
+- [x] Navigate to your `index.less` file. Notice the file is blank. In order for you to see the styles for this project you must import them in a certain order. That order is as follows:
 
 1. `variables.less`
 2. `mixins.less`
