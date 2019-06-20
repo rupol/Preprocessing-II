@@ -168,6 +168,29 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+header .nav-bar {
+  height: 90px;
+  border-bottom: 2px dashed gray;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+header .nav-bar .navigation a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+  padding: 15px;
+}
+header .intro {
+  border-bottom: 2px dashed gray;
+}
+header .intro img {
+  margin-bottom: 2rem;
+}
+header .intro p {
+  margin-bottom: 1rem;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
