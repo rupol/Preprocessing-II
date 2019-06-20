@@ -1,4 +1,15 @@
 .home {
+  .intro {
+    border-bottom: 2px dashed gray;
+
+    img {
+      margin-bottom: 2rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+  }
 
   .content-section {
     margin: 30px 0;
@@ -6,8 +17,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -56,6 +65,18 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn {
+        .button-style(
+          12px 43px,
+          83%,
+          #108888,
+          #fff,
+          2rem,
+          1px solid gray,
+          1.5rem
+        );
+      }
     }
   }
-}// home
+} // home

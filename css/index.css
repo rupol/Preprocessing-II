@@ -168,28 +168,24 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-header .nav-bar {
+.nav-bar {
+  max-width: 1000px;
+  margin: 0 auto;
   height: 90px;
   border-bottom: 2px dashed gray;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
-header .nav-bar .navigation a {
+.nav-bar .nav-text {
+  margin-right: 33%;
+}
+.nav-bar .navigation a {
   text-decoration: none;
   color: black;
   font-size: 1.6rem;
   padding: 15px;
-}
-header .intro {
-  border-bottom: 2px dashed gray;
-}
-header .intro img {
-  margin-bottom: 2rem;
-}
-header .intro p {
-  margin-bottom: 1rem;
 }
 .footer {
   width: 100%;
@@ -201,6 +197,15 @@ header .intro p {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home .intro {
+  border-bottom: 2px dashed gray;
+}
+.home .intro img {
+  margin-bottom: 2rem;
+}
+.home .intro p {
+  margin-bottom: 1rem;
 }
 .home .content-section {
   margin: 30px 0;
@@ -247,4 +252,13 @@ header .intro p {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  padding: 12px 43px;
+  width: 83%;
+  background: #108888;
+  color: #fff;
+  font-size: 2rem;
+  border: 1px solid gray;
+  border-radius: 1.5rem;
 }
