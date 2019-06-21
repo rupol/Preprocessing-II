@@ -8,7 +8,7 @@ html {
 
 html,
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: @roboto;
 }
 
 h1,
@@ -16,7 +16,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Indie Flower", cursive;
+  font-family: @indie-flower;
 }
 
 h1 {
@@ -53,8 +53,7 @@ img {
   width: 100%;
   margin: 0 auto;
 
-  @media @mobile {
-    width: 100%;
+  @media @tablet {
     padding: 0 5%;
   }
 }
