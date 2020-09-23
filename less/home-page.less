@@ -1,31 +1,61 @@
 .home {
+  .intro {
+    margin-top: 90px;
+    border-bottom: 2px dashed @navigation-border;
+
+    img {
+      margin-bottom: 2rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+  }
 
   .content-section {
     margin: 30px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    .flex();
 
-   
-    
+    @media @mobile {
+      // display: inline-block;
+    }
+
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 98%;
+        padding-right: 0;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile {
+        width: 100%;
+        padding-left: 0%;
+      }
+
       img {
         border-radius: 10px;
+
+        @media @mobile {
+          width: 100%;
+        }
       }
     }
   }
 
   .inverse-content {
     padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
+    border-bottom: @border;
+
+    @media @mobile {
+      flex-wrap: wrap-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -42,6 +72,10 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @mobile {
+      width: 98%;
+    }
+
     img {
       border-radius: 10px;
     }
@@ -49,13 +83,54 @@
 
   .content-pick {
     padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
+    border-top: @border;
+    .flex();
+
+    @media @tablet {
+      justify-content: center;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @tablet {
+        width: 80%;
+      }
+
+      .btn {
+        .button-style(
+          10px 45px,
+          auto,
+          @button-bg,
+          @main-bg,
+          2rem,
+          1px solid @navigation-border,
+          1.5rem
+        );
+
+        @media @tablet {
+          .button-style(
+            10px 45px,
+            100%,
+            @button-bg,
+            @main-bg,
+            2rem,
+            1px solid @navigation-border,
+            1.5rem
+          );
+        }
+      }
+
+      .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .btn:active {
+        transform: translateY(-1px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      }
     }
   }
-}// home
+} // home
